@@ -4155,3 +4155,8 @@ input, select, textarea {
 		}
 
 	}
+
+#banner button{
+	font-size: 1.25em;
+	background:hsla(0, 0%, 100%, 0.3)
+}
