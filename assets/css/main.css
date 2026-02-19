@@ -2984,7 +2984,7 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				/* padding: 0; */
 			}
 
 		}
@@ -3076,17 +3076,29 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(61, 61, 61, 0.692);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
-		padding: 0 1.25em;
+		padding: 0 3.25em;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		overflow-wrap: break-word;   /* or word-wrap: break-word; for older browsers */
+  word-break: break-word;      /* ensures long words break */
+		overflow:hidden;
+		
 	}
-
+		#header button{
+			height: 80%;
+			display: flex;
+			align-items: center;
+			padding: 5px 5px;
+		}
 		#header h1 {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3094,6 +3106,7 @@ input, select, textarea {
 			transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			border-bottom: 0;
 			font-size: 0.8em;
+			font-weight: 1700;
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
@@ -3164,14 +3177,6 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
-		#header.alt {
-			background-color: transparent;
-		}
-
-			#header.alt h1 {
-				opacity: 0;
-				visibility: hidden;
-			}
 
 		@media screen and (max-width: 736px) {
 
@@ -3205,6 +3210,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			#header{
+				padding: 0;
+			}
 
 			#header nav a[href="#menu"] {
 				width: 4em;
@@ -3479,7 +3488,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 14em 3em 12.375em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3559,7 +3568,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px rgba(255, 255, 255, 0.068);
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -4037,6 +4046,8 @@ input, select, textarea {
 
 		#footer .inner .contact {
 			width: calc(50% - 1.5em);
+			overflow-wrap: break-word;   /* or word-wrap: break-word; for older browsers */
+  word-break: break-word;      /* ensures long words break */
 		}
 
 		#footer .inner .copyright {
@@ -4158,5 +4169,5 @@ input, select, textarea {
 
 #banner button{
 	font-size: 1.25em;
-	background:hsla(0, 0%, 100%, 0.3)
+	background:hsla(0, 0%, 100%, 0.3);
 }
