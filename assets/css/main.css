@@ -3105,8 +3105,8 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			transition: opacity 0.2s ease-in-out, visibility 0.2s;
 			border-bottom: 0;
-			font-size: 0.8em;
-			font-weight: 1700;
+			font-size: 1em;
+			font-weight: 1000;
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
@@ -3183,6 +3183,11 @@ input, select, textarea {
 			#header {
 				height: 2.75em;
 				line-height: 2.75em;
+			}
+
+			#header h1{
+					font-size: 0.8em;
+					font-weight: 1000;
 			}
 
 				#header nav {
@@ -4170,4 +4175,21 @@ input, select, textarea {
 #banner button{
 	font-size: 1.25em;
 	background:hsla(0, 0%, 100%, 0.3);
+}
+
+.logo{
+	display: flex;
+  height: 3.5em;
+  align-items: center;
+	min-width: 0;
+ 	white-space: nowrap;
+	overflow: hidden;
+}
+.logo h1{
+	font-size: 1em;
+	min-width: 0;
+}
+.logo img{
+	height: 100%;
+	padding: 0.3em;
 }
