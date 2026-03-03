@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700|Source+Sans+Pro:300,600,300italic,600italic|Montserrat:200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700|Source+Sans+Pro:300,600,300italic,600italic|Open+Sans:200,300,400,500,600,700|Poppins:200,300,400,500,600,700");
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"); */
 
 /*
@@ -2249,6 +2249,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -3461,6 +3462,7 @@ input, select, textarea {
 			font-weight: 700;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+			font-family: Poppins;
 		}
 
 		#banner p {
